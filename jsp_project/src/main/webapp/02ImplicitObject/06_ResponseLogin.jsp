@@ -7,10 +7,10 @@
 String id = request.getParameter("user_id");
 String pwd = request.getParameter("user_pwd"); 
 if (id.equalsIgnoreCase("must") && pwd.equalsIgnoreCase("1234")) {
-    response.sendRedirect("ResponseWelcome.jsp");
+    response.sendRedirect("07_ResponseWelcome.jsp");
 }
 else {
-    request.getRequestDispatcher("ResponseMain.jsp?loginErr=1")
+    request.getRequestDispatcher("05_ResponseMain.jsp?loginErr=1")
        .forward(request, response); 
 }
 %>

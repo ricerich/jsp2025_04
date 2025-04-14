@@ -8,7 +8,9 @@
 </head>
 <body>
 <%
-String str1 = request.getParameter("age")==null ? "0" : request.getParameter("age").trim();
+// String str1 = request.getParameter("age")==null ? "0" : request.getParameter("age").trim();
+
+String str1 = request.getParameter("age");
 
 // if(str1 == null)
 // 	str1 = "0";

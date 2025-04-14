@@ -17,18 +17,18 @@
   </context-param>
   
   <!-- 에러 페이지 처리하기(예제 2-12) -->
-  <!-- <error-page>
+  <error-page>
     <error-code>404</error-code>
-    <location>/02ImplicitObject/Exception.jsp</location>
+    <location>/02ImplicitObject/13_Exception.jsp</location>
   </error-page>
   <error-page>
     <error-code>405</error-code>
-    <location>/02ImplicitObject/Exception.jsp</location>
+    <location>/02ImplicitObject/13_Exception.jsp</location>
   </error-page>
   <error-page>
     <error-code>500</error-code>
-    <location>/02ImplicitObject/Exception.jsp</location>
-  </error-page> -->
+    <location>/02ImplicitObject/13_Exception.jsp</location>
+  </error-page>
   
  
 </web-app>
