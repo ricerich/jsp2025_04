@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"
-    errorPage="IsErrorPage.jsp"%>  <!--에러 페이지 지정-->
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +8,12 @@
 </head>
 <body>
 <%
-int myAge = Integer.parseInt(request.getParameter("age")) + 10;  // 에러 발생
+String str1 = request.getParameter("age")==null ? "0" : request.getParameter("age").trim();
+
+// if(str1 == null)
+// 	str1 = "0";
+
+int myAge = Integer.parseInt(str1) + 10;  // 에러 발생
 out.println("10년 후 당신의 나이는 " + myAge + "입니다.");  // 실행되지 않음
 %>
 </body>

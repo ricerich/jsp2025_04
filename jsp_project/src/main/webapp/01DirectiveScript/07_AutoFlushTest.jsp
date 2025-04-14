@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" buffer="1kb" autoFlush="false"%>  <!--버퍼 설정-->
+    pageEncoding="UTF-8" buffer="1kb" autoFlush="true"%>  <!--버퍼 설정-->
 <!DOCTYPE html>
 <html>
 <head>
