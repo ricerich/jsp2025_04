@@ -16,5 +16,5 @@ String str1 = request.getParameter("age")==null ? "0" : request.getParameter("ag
 int myAge = Integer.parseInt(str1) + 10;  // 에러 발생
 out.println("10년 후 당신의 나이는 " + myAge + "입니다.");  // 실행되지 않음
 %>
-</body>
-</html>
+</body> 
+</html> 
