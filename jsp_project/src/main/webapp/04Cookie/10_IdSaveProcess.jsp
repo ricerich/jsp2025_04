@@ -1,7 +1,6 @@
 <%@ page import="utils.CookieManager"%>
 <%@ page import="utils.JSFunction"%>  
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>  
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>  
 <%
 String user_id = request.getParameter("user_id"); 
 String user_pw = request.getParameter("user_pw");
@@ -18,7 +17,7 @@ if ("must".equals(user_id) && "1234".equals(user_pw)) {
         CookieManager.deleteCookie(response, "loginId"); 
     }
     
-    JSFunction.alertLocation("로그인에 성공했습니다.", "IdSaveMain.jsp", out); 
+    JSFunction.alertLocation("로그인에 성공했습니다.", "09_IdSaveMain.jsp", out); 
 }
 else {
     // 로그인 실패
