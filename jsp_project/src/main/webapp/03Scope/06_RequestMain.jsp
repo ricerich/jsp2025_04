@@ -23,8 +23,10 @@ request.setAttribute("requestPerson", new Person("안중근", 31));
     </ul>
     <h2>포워드된 페이지에서 request 영역 속성값 읽기</h2>
     <%
-    request.getRequestDispatcher("RequestForward.jsp?paramHan=한글&paramEng=English")  
+    request.getRequestDispatcher("07_RequestForward.jsp?paramHan=한글&paramEng=English")  
         .forward(request, response);
     %>
 </body>
 </html>
+
+

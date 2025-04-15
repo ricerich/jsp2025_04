@@ -1,6 +1,5 @@
 <%@ page import="common.Person"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 // 속성 저장
 pageContext.setAttribute("pageInteger", 1000);
@@ -24,9 +23,9 @@ pageContext.setAttribute("pagePerson", new Person("한석봉", 99));
     </ul>
 
     <h2>include된 파일에서 page 영역 읽어오기</h2>
-    <%@ include file="PageInclude.jsp" %>
+    <%@ include file="04_PageInclude.jsp" %>
        
     <h2>페이지 이동 후 page 영역 읽어오기</h2>
-    <a href="PageLocation.jsp">PageLocation.jsp 바로가기</a>
+    <a href="05_PageLocation.jsp">PageLocation.jsp 바로가기</a>
 </body>
 </html>
