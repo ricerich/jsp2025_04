@@ -23,6 +23,6 @@ application.setAttribute("scopeValue","애플리케이션 영역");
         <li>${ scopeValue }</li> 
     </ul>
     
-<%--     <jsp:forward page="02_ImplicitForwardResult.jsp" /> --%>
+    <jsp:forward page="02_ImplicitForwardResult.jsp" />
 </body>
 </html>
