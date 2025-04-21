@@ -1,11 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <html>
 <meta charset="UTF-8">
 <head><title>표현 언어(EL) - 폼값 처리</title></head>
 <body>
     <h2>폼값 전송하기</h2>
-    <form name="frm" method="post" action="FormResult.jsp">
+    <form name="frm" method="post" action="04_FormResult.jsp">
         이름 : <input type="text" name="name" /><br />
         성별 : <input type="radio" name="gender" value="Man" />남자
                <input type="radio" name="gender" value="Woman" />여자<br />

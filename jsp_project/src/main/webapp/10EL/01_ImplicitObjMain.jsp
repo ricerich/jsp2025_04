@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 pageContext.setAttribute("scopeValue", "페이지 영역");
 request.setAttribute("scopeValue", "리퀘스트 영역");
@@ -24,6 +23,6 @@ application.setAttribute("scopeValue","애플리케이션 영역");
         <li>${ scopeValue }</li> 
     </ul>
     
-    <jsp:forward page="ImplicitForwardResult.jsp" />
+<%--     <jsp:forward page="02_ImplicitForwardResult.jsp" /> --%>
 </body>
 </html>

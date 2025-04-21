@@ -10,7 +10,7 @@
     request.setAttribute("stringObj", "나는 문자열");
     request.setAttribute("integerObj", new Integer(99));
     %>
-    <jsp:forward page="ObjectResult.jsp">
+    <jsp:forward page="06_ObjectResult.jsp">
         <jsp:param value="10" name="firstNum" />
         <jsp:param value="20" name="secondNum" />
     </jsp:forward>
