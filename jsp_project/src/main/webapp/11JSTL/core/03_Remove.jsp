@@ -22,7 +22,7 @@
         <li>sessionScope.scopeVar : ${ sessionScope.scopeVar }</li>
     </ul>
 
-    <h4>scope 지정 없이 삭제하기</h4>
+    <h4>scope 지정 없이 삭제하기</h4>m
     <c:remove var="scopeVar" />
     <ul>
         <li>scopeVar : ${ scopeVar }</li>
