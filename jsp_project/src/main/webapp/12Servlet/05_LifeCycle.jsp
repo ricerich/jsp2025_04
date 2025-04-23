@@ -20,7 +20,7 @@
     </script>
 
     <h2>서블릿 수명주기(Life Cycle) 메서드</h2>
-    <form action="./LifeCycle.do">
+    <form action="./LifeCycle.do" method="get">
         <input type="button" value="Get 방식 요청하기" onclick="requestAction(this.form, 1);" />
         <input type="button" value="Post 방식 요청하기" onclick="requestAction(this.form, 2);" />
     </form>

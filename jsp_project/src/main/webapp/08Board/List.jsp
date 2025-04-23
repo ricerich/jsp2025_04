@@ -3,8 +3,7 @@
 <%@ page import="java.util.Map"%>
 <%@ page import="model1.board.BoardDAO"%>
 <%@ page import="model1.board.BoardDTO"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 // DAO를 생성해 DB에 연결
 BoardDAO dao = new BoardDAO(application);

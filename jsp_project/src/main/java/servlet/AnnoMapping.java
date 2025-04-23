@@ -16,6 +16,6 @@ public class AnnoMapping extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         req.setAttribute("message", "@WebServlet으로 매핑");
-        req.getRequestDispatcher("/12Servlet/AnnoMapping.jsp").forward(req, resp);
+        req.getRequestDispatcher("/12Servlet/02_AnnoMapping.jsp").forward(req, resp);
     }
 }
