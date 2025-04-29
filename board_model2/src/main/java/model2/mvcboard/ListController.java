@@ -63,6 +63,7 @@ public class ListController extends HttpServlet
 		   
         // 뷰(List.jsp)에 전달할 매개변수 추가(전달은 ? 붙여서, map으로)
 		int totalCount = dao.selectCount(map);  // 게시물 개수
+		dao.close();
         String pagingImg = BoardPage.pagingStr(totalCount, 
         										pageSize,
         										blockPage, 
