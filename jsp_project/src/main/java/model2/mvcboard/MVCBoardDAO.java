@@ -50,6 +50,8 @@ public class MVCBoardDAO extends DBConnPool {
                + "    ) Tb "
                + " ) "
                + " WHERE rNum BETWEEN ? AND ?";
+        
+        System.out.println(query);
 
         try {
             psmt = con.prepareStatement(query);
