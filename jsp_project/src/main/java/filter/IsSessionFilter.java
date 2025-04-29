@@ -14,7 +14,8 @@ import jakarta.servlet.http.HttpSession;
 import utils.JSFunction;
 
 @WebFilter(urlPatterns={"/09PagingBoard/Write.jsp",
-		"/09PagingBoard/Edit.jsp","/09PagingBoard/DeleteProcess.jsp"})
+						"/09PagingBoard/Edit.jsp",
+						"/09PagingBoard/DeleteProcess.jsp"})
 public class IsSessionFilter implements Filter {
 
 	@Override
