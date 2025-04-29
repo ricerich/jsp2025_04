@@ -16,7 +16,10 @@ public class MVCBoardDAO extends DBConnPool {
 		
 		query.append(" ");
 		query.append(" SELECT "); 
-		query.append("         * 									"); 
+//		query.append("         * 									"); 
+		query.append(" 		  IDX, NAME, TITLE, CONTENT, POSTDATE, ");
+		query.append(" 		  OFILE, SFILE, DOWNCOUNT, PASS, VISITCOUNT, ");
+		query.append(" 	      rNUM 									");
 		query.append(" FROM (     									");
 		query.append("         SELECT 								"); 
 		query.append("                 Tb.*, ROWNUM rNum 			"); 
@@ -28,7 +31,7 @@ public class MVCBoardDAO extends DBConnPool {
 		
 		if(map.get("searchWord") != null) {
 			query.append("                WHERE  						");
-			query.append("                         "+map.get("searchField")+" LIKE '%"+map.get("searchWord")+"%'  ");         
+			query.append("  "+map.get("searchField")+" LIKE '%"+map.get("searchWord")+"%'  ");         
 		}
 		
 		query.append("              ORDER BY idx DESC  				");    
