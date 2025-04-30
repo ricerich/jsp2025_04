@@ -17,11 +17,7 @@ public class ListController extends HttpServlet
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) 
 						throws ServletException, IOException {
-		
-		
-		
-		
-		
+				
 		// 뷰에 전달할 매개변수 저장용 맵 생성
 		Map<String, Object> map = new HashMap<String, Object>();
 		String searchField = req.getParameter("searchField");
