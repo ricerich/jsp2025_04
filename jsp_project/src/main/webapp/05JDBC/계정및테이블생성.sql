@@ -63,6 +63,10 @@ create sequence seq_board_num
 system 계정에서 실행
 : 레코드를 삽입하기 전 테이블 스페이스 설정을 위해 실행합니다. 
 ********************/    
+    
+    --새 계정으로 오라클 접속
+conn system/12345;
+
 --테이블 스페이스를 조회    
 select tablespace_name, status, contents from dba_tablespaces;
 
@@ -81,6 +85,10 @@ alter user musthave quota 5m on users;
 /*******************
 musthave 계정에서 실행
 ********************/    
+
+--새 계정으로 오라클 접속
+conn musthave/1234;
+
 --[예제 5-5] 더미 데이터 입력
 insert into member (id, pass, name) values ('musthave', '1234', '머스트해브');
 insert into board  (num, title, content, id, postdate, visitcount) 
