@@ -11,7 +11,7 @@
 	String favoStr = "";
 	if (favo != null) {  
 	    for (int i = 0; i < favo.length; i++) {
-	        favoStr += favo[i] + " ";
+	        favoStr = favoStr + favo[i] + " ";
 	    }
 	}
 	String intro = request.getParameter("intro").replace("\r\n", "<br/>");  

@@ -18,6 +18,9 @@
         request.setCharacterEncoding("UTF-8");
         out.println(request.getParameter("paramHan"));
         out.println(request.getParameter("paramEng"));
+        out.println(request.getParameter("age"));
+        
+        
     %>
 </body>
 </html>

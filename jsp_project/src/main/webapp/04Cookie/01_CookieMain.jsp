@@ -7,7 +7,8 @@
     <%
     Cookie cookie = new Cookie("myCookie", "쿠키맛나요");  // 쿠키 생성
     cookie.setPath(request.getContextPath());  // 경로를 컨텍스트 루트로 설정
-    cookie.setMaxAge(3600);  // 유지 기간을 1시간으로 설정
+//     out.println(request.getContextPath());
+    cookie.setMaxAge(60*60*12);  // 유지 기간을 1시간으로 설정
     response.addCookie(cookie);  // 응답 헤더에 쿠키 추가
     %>
 
