@@ -1,4 +1,4 @@
-package booklist;
+package BookStore;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

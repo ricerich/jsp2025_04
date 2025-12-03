@@ -1,4 +1,4 @@
-package booklist;
+package BookStore;
 
 public class Book
 {
@@ -63,7 +63,8 @@ public class Book
 		System.out.print(bookid +"\t");
 		System.out.print(bookname + "\t");
 		System.out.print(publisher +"\t");
-		System.out.println(price );
+		System.out.print(price );
+		System.out.println();
 	}
 	
 }
